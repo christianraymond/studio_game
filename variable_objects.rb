@@ -1,26 +1,26 @@
 # movie = "Goonies"
 # puts "Christian's favorite movie is #{movie}"
 
-# thumbs_up = 90
-# thumbs_down = 1
-# puts  thumbs_up - thumbs_down
-# puts "The time is #{Time.new}"
+thumbs_up = 90
+thumbs_down = 1
+puts  thumbs_up - thumbs_down
+puts "The time is #{Time.new}"
 
 
-# name1 = "larry"
-# name2 = "curly"
-# name3 = "moe"
-# name4 = "shemp"
+name1 = "larry"
+name2 = "curly"
+name3 = "moe"
+name4 = "shemp"
 
-# rank1 = 60
-# rank2 = 125
-# rank3 = 100
-# rank = 90 
+rank1 = 60
+rank2 = 125
+rank3 = 100
+rank = 90 
 
-# puts "#{name1.upcase} has a health of #{rank1}"
-# puts "#{name2.upcase} has a health of #{rank2}"
-# puts "#{name3.capitalize.center(23, '*')}has a health of#{rank3}"
-# puts "#{name4.capitalize.ljust(30, '.') } #{rank} health"
+puts "#{name1.upcase} has a health of #{rank1}"
+puts "#{name2.upcase} has a health of #{rank2}"
+puts "#{name3.capitalize.center(23, '*')}has a health of#{rank3}"
+puts "#{name4.capitalize.ljust(30, '.') } #{rank} health"
 
 name1 = "larry"
 health1 = 60
