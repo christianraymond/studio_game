@@ -34,10 +34,15 @@ player2 = Player.new("larry", 60)
 player3 = Player.new("curly", 125)
 
 players = [player1, player2, player3]
+puts players.size
 
 players.each do |player|
-  player1.blam
-  player2.w00t
-  player3.w00t
-  puts players
+  puts player
 end
+
+# players.each do |player|
+#   player1.blam
+#   player2.w00t
+#   player3.w00t
+#   puts players
+# end
