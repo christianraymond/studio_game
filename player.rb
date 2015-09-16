@@ -3,6 +3,7 @@ class Player
   attr_accessor :name, :health
   def initialize(name, health=100)
     @name = name.capitalize
+
     @health = health
   end
 
@@ -19,12 +20,12 @@ class Player
   end
 
   def blam
-    @health += 10
+    @health -= 10
     puts "I'm #{@name.upcase} and got blamed"
   end
 
   def w00t
-    @health -= 15
+    @health += 15
     puts "I'm #{@name.upcase} and got wooted!"
   end
   
