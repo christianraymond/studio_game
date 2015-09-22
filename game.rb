@@ -1,4 +1,5 @@
-require_relative 'studio_game'
+require_relative 'die'
+require_relative 'player'
 
 class Game
   attr_reader :title
@@ -15,13 +16,26 @@ class Game
       puts "There are #{@players.size} players in #{@title}"              
       @players.each do |player|
           puts player
-      end
+    end                 
 
       @players.each do |player|
+        die = Die.new
+        number_rolled = die.roll
+      case die.roll
+      when 1..2
         player.blam
+      when 3..4
+        puts "#{player.name} was skipped"
+      else   
         player.w00t
-        player.w00t
-        puts player
       end
+        puts player
     end
+  end
 end
+
+
+
+
+
+  
