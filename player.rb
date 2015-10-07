@@ -30,7 +30,11 @@
      @health += 15
      puts "I'm #{@name.upcase} and got wooted!"
    end
-  
+
+  def <=>(other)
+    other.score <=> score
+  end 
+
  end
 
  if __FILE__ == $0
