@@ -5,6 +5,7 @@ require_relative 'game_turn'
 
 class Game
   attr_accessor :title
+  
   def initialize(title)
     @title = title
     @players = [] 
@@ -15,14 +16,12 @@ class Game
   end
 
   def print_name_and_health(player)
-      puts "#{player.name} (#{player.health})"
-    end
+    puts "#{player.name} (#{player.health})"
+  end
 
   def print_stats
     puts "\n#{@title} Statistics:"
-
     strong_players, wimpy_players = @players.partition { |player| player.strong? }
-
 
     puts "\n#{strong_players.size} strong players:"
     strong_players.each do |player|
@@ -41,7 +40,10 @@ class Game
       formatted_name = player.name.ljust(20, '.')
       puts "#{formatted_name} #{player.score}"
     end
-
+    @players.each do |player|
+      puts "\n#{player.name}'s point totals:"
+      puts "#{player.points} grand total points"
+    end
   end
 
   def play(rounds)
@@ -67,7 +69,7 @@ class Game
       puts player
     end
   end
- end
+end
 
       
 
