@@ -1,4 +1,4 @@
-
+require_relative 'treasure_trove'
 class Player
 
   attr_accessor :name 
@@ -27,7 +27,7 @@ class Player
     end
 
     def blam
-      @health -= 10 
+      @health -= 10
       puts "I'm #{@name.upcase} and got blamed"
     end
 
@@ -46,6 +46,11 @@ class Player
       puts "#{@name}'s treasures :#{@found_treasures}"
     end
 
+    def each_found_treasure
+      @found_treasures.each do |name, points|
+        yield Treasure.new(name, points)
+      end
+    end  
   end
 
   if __FILE__ == $0

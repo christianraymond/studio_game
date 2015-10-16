@@ -5,3 +5,8 @@ class Die
     @number = rand(1..6)
   end
 end
+
+
+
+
+

@@ -26,8 +26,16 @@ class Game
     puts "\n#{strong_players.size} strong players:"
     strong_players.each do |player|
       print_name_and_health(player)
+
+    @players.sort.each do |player|
+      puts "\n#{player.name}'s point totals:"
+      player.each_found_treasure do |treasure|
+        puts "#{treasure.points} total #{treasure.name} points"
     end
-      
+      puts "#{player.points} grand total points"
+    end
+  end
+
     puts "\n#{wimpy_players.size} wimpy players:"
     wimpy_players.each do |player|
       print_name_and_health(player)
@@ -52,21 +60,21 @@ class Game
     @players.each do |player|
       puts player
 
-         treasures = TreasureTrove::TREASURES
+      treasures = TreasureTrove::TREASURES
+      puts "\nThere are #{treasures.size} treasures to be found:"
 
-        puts "\nThere are #{treasures.size} treasures to be found:"
-        treasures.each do |treasure|
+      treasures.each do |treasure|
         puts "A #{treasure.name} is worth #{treasure.points} points"
       end
     end
   
     1.upto(rounds) do |round|
       puts "\nRound #{round}:"
-    end
       
-    @players.each do |player|
-      GameTurn.take_turn(player)
-      puts player
+      @players.each do |player|
+        GameTurn.take_turn(player)
+        puts player
+      end
     end
   end
 end
