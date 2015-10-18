@@ -89,6 +89,13 @@ describe Player do
   ]
   end
 
+  it "can be created from a CSV string" do
+  player = Player.from_csv("larry,150")
+
+  player.name.should == "Larry"
+  player.health.should == 150
+end
+
   context "in a collection of players" do
     before do
       @player1 = Player.new("moe", 100)

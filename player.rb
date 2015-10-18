@@ -50,9 +50,14 @@ class Player
       @found_treasures.each do |name, points|
         yield Treasure.new(name, points)
       end
-    end  
+    end 
+
+  def self.from_csv(string)
+  name, health = string.split(',')
+  Player.new(name, Integer(health))
   end
 
+end
   if __FILE__ == $0
 
   player = Player.new("moe")
