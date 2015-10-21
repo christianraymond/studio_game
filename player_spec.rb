@@ -1,5 +1,6 @@
- require_relative 'player'
- require_relative 'treasure_trove_spec'
+require_relative 'spec_helper'
+require_relative 'player'
+require_relative 'treasure_trove_spec'
 describe Player do
 
   before do
