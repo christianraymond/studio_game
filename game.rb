@@ -1,7 +1,7 @@
 require_relative 'die'
 require_relative 'player'
 require_relative 'game_turn'
- require_relative 'treasure_trove'
+require_relative 'treasure_trove'
 
 class Game
   attr_accessor :title
