@@ -4,6 +4,7 @@ Treasure = Struct.new(:name, :points)
   def self.random
     TREASURES.sample
   end 
+  
   TREASURES = [
     Treasure.new(:pie,         5),
     Treasure.new(:bottle,      25),
