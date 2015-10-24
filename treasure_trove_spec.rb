@@ -1,6 +1,6 @@
  require_relative 'treasure_trove'
    
-
+module StudioGame
   describe Treasure do
   
   before do
@@ -53,5 +53,5 @@ describe TreasureTrove do
   TreasureTrove::TREASURES.should include(treasure)
   end
 end
-
+end
 

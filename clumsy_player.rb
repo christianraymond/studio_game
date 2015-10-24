@@ -1,5 +1,5 @@
 require_relative 'player'
-
+module StudioGame
   class ClumsyPlayer < Player
 
     def found_treasure(treasure)
@@ -7,7 +7,7 @@ require_relative 'player'
       super(damaged_treasure)
     end
   end
-
+end
 	if __FILE__ == $0
   	clumsy = ClumsyPlayer.new("klutz")  
   

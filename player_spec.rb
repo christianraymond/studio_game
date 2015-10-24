@@ -1,6 +1,7 @@
 require_relative 'spec_helper'
 require_relative 'player'
 require_relative 'treasure_trove_spec'
+module StudioGame
 describe Player do
 
   before do
@@ -35,7 +36,7 @@ describe Player do
   end
   
   it "is strong ?" do
-    @player.strong?.should be_true
+    @player.strong?.should == true
   end
 
   it "computes points as the sum of all treasure points" do
@@ -111,6 +112,6 @@ end
     end
   end
 end
-
+end
 
                                                                                       

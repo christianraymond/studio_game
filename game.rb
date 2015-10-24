@@ -2,7 +2,8 @@ require_relative 'die'
 require_relative 'player'
 require_relative 'game_turn'
 require_relative 'treasure_trove'
-
+require_relative 'studio_game'
+module StudioGame
 class Game
   attr_accessor :title
   
@@ -93,4 +94,5 @@ class Game
       end
     end
   end
+end
 end

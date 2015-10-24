@@ -1,4 +1,5 @@
 require_relative 'player'
+module StudioGame
 class BerserkPlayer < Player
 
 	def initialize(name, health=100)
@@ -27,6 +28,7 @@ class BerserkPlayer < Player
 		# def blam
 		# 	berserk? ? w00t : super
 		# end
+end
 end
 
 	if __FILE__ == $0

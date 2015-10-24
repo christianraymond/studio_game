@@ -1,3 +1,4 @@
+module StudioGame
 module Playable
   def strong?
    health > 100
@@ -13,7 +14,7 @@ module Playable
    puts "I'm #{@name.upcase} and got wooted!"
   end
 end
-
+end
 
 
 

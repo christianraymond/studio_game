@@ -1,6 +1,7 @@
 require_relative 'treasure_trove'
 require_relative 'playable'
 
+module StudioGame
 class Player
   include Playable
   attr_accessor :name 
@@ -45,7 +46,7 @@ class Player
   name, health = string.split(',')
   Player.new(name, Integer(health))
   end
-
+end
 end
   if __FILE__ == $0
 

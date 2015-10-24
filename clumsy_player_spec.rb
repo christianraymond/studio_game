@@ -1,6 +1,6 @@
-
 require_relative 'clumsy_player'
-
+module StudioGame
+module StudioGame
 describe ClumsyPlayer do
   before do
     @player = ClumsyPlayer.new("klutz")
@@ -28,5 +28,6 @@ describe ClumsyPlayer do
 
     yielded.should == [Treasure.new(:hammer, 75), Treasure.new(:crowbar, 200)]    
   end
-
+end
+end
 end

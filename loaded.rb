@@ -1,5 +1,5 @@
 require_relative 'auditable'
-
+module StudioGame
 class LoadedDie
 	include Auditable
   
@@ -11,4 +11,5 @@ class LoadedDie
     audit
     @number
   end  
+end
 end

@@ -1,4 +1,5 @@
 require_relative 'auditable'
+module StudioGame
 class Die
 	include Auditable
   attr_reader :number
@@ -8,7 +9,7 @@ class Die
     @number
   end
 end
-
+end
 
 
 

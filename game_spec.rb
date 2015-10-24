@@ -1,4 +1,5 @@
 require_relative 'game'
+module StudioGame
  describe Game do
 
     before do
@@ -34,8 +35,8 @@ require_relative 'game'
       game.play(1)
       player.points.should_not be_zero
     end
+  end
 end
- 
       
 
           

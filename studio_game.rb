@@ -1,8 +1,11 @@
+
 require_relative 'berserk_player'
 require_relative 'clumsy_player'
 require_relative 'player'
 require_relative 'game'
 
+game = Game.new("knuckleheads")
+game = Game.new("knuckleheads")
 berserker = BerserkPlayer.new("berserker", 50)
 klutz = ClumsyPlayer.new("klutz", 105)
 player1 = Player.new("moe", 100)
@@ -38,9 +41,3 @@ loop do
     puts "Please enter a number or 'quit'"
   end
 end
-
-
-
-
-
-

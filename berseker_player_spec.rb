@@ -1,5 +1,5 @@
 require_relative 'berserk_player'
-
+module StudioGame
 describe BerserkPlayer do
   
   before do
@@ -22,7 +22,7 @@ describe BerserkPlayer do
     # @player.berserk?.should be_true
 
     # or if using Rspec 3.0:
-    @player.berserk?.should be_truthy
+     @player.berserk?.should be_truthy
   end
   
   it "gets w00ted instead of blammed when it's gone berserk" do  
@@ -31,5 +31,6 @@ describe BerserkPlayer do
     
     @player.health.should == @initial_health + (8 * 15)
   end
-
 end
+end
+

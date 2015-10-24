@@ -1,6 +1,6 @@
 require_relative 'player'
 require_relative 'loaded'
-
+module StudioGame
 module GameTurn
   def self.take_turn(player)
     die = Die.new
@@ -18,8 +18,7 @@ module GameTurn
       puts "#{player.name} found a #{treasure.name} whorth #{treasure.points} points"
   end
 end
-  
-  
+end  
 
 
  
